@@ -1,9 +1,0 @@
-1. Create database and tables in MySQL database
-
-2. Download mysql connector jar from the site: https://dev.mysql.com/downloads/connector/j/
-
-3. Create a Java project. Create a folder named Library in the project and place this jar file in it.
-
-Project Structure: \IdeaProjects\ProjectName\library
-
-4. Add this library to the project's build path
