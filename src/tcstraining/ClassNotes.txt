@@ -1,3 +1,5 @@
+https://github.com/banumanoharan/KeepLearningJava
+
 Day 1
 ~~~~~~
 
@@ -619,6 +621,410 @@ field
 method
 class
 
+Sum Up
+******
+Array
+ What is array
+ Types of array - single [], Double/Two[][], Multi[][][]
+ Declaration without memory
+ Declaration with memory
+ How to initialize/allocate memory for array during compilation and execution
+ Compilation - int[] array1 = {23,56,67};
+ Execution  - int[] array2 = new int[3];int[] array2 = new int[]{45,66,7,78,};
+
+ single dimensional - array1.length will give the number of elements/columns
+ two dimensional - array1. length - Number of rows
+ array1[0].length - Number of columns
+
+Traversing across array
+ - Index starts with 0 
+ - single - one for loop (traverse across columns)
+ - two - two for loops , one for traversing across rows, and another for traversing across columns
+
+abstract
+ Perfume - Jasmine, Rose
+ Account - Savings, Current
+ Mobile - Apple, Samsung, Mi
+ Shape - Square, Rectangle, Circle
+
+  - Go with Method and class
+
+
+final
+ - Field - value can't be changed
+ - Method - can't be overridden
+ - class - can't be inherited
+__________________________________________________
+Day 4 - 03.06.2025
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+class AIA
+{
+//members
+//toString()
+}
+ 
+AIA[] array12;
+array12[0] = new AIA();
+array12[1] = new AIA();
+array12[2] = new AIA();
+
+AIA a1 = new AIA();
+AIA a2 = new AIA();
+AIA a3 = new AIA();
+AIA a4 = new AIA();
+
+AIA[] array12 = {a1, a2, a3, a4};
+array12[0] = a1;
+
+for(int i=0;i<array12.length;i++)
+ 
+
+abstract class Shape{
+area();
+}
+
+instance of abstract class
+
+String 
+
+char - 'a'
+String - "a"
+
+compilation
+execution 
+String pool
+
+Java Strings are immutable
+
+String s1="ABC";//120
+s1+" Hello!";//650
+
+
+String s1= "ABCD";
+String s2= new String("SP");
+String[] s3= new String[4];
+String[] s4 = {"MDA","MDH","MDS"};
+
+
+sp-field
+sp()- method
+
+
+String - Immutable, Thread-safe
+StringBuffer - Mutable, Thread-safe
+StringBuilder - Mutable, Not thread-safe
+
+
+String s1="ABC";//120
+s1+"Hello!";//650
+s1+" SP!";//76
+
+
+StringBuffer s1="ABC";//120
+s1+" Hello!";//120
+
+StringBuilder s1="ABC";//120
+s1+" Hello!";//120
+
+
+String s1="Hello";
+StringBuffer s2="Hello";
+StringBuilder s3="Hello";
+
+
+m1(){
+s1.toUppercase();
+s2.toUppercase();
+s3.toUppercase();
+}
+
+m2(){
+s1+" MDF";
+s2+" MDF";;
+s3+" MDF";;
+}
+
+HELLO
+Hello MDF
+
+HEL MDF
+
+
+hello
+
+hesso
+
+compare
+equals
+==
+
+String s1="ABC";
+String s2 = "AIA";//65
+String s3= s2;//65
+
+
+s1.equals(s2)//content - false
+s1==s2//memory references
+s1==s2//false
+s1==s3//false
+s2=s3//true
+
+
+Interface
+
+contract 
+
+
+class MyClass//Members
+{
+int d;
+void m1(){}
+}
+
+interface MyInterface//Members
+{
+//field - public final- int d=10;
+//method - void m1();//abstract before Java 8
+// From Java 8, having default and static methods also
+
+
+}
+
+
+
+To make Java support multiple inheritance
+
+interface InterfaceOne {
+int d=100;
+void m1();
+static void dMethod(){}
+default void dMethod1(){}
+static void sMethod(){}
+}
+
+
+abstract class C11 implements InterfaceOne{
+}
+
+class C12 extends C11{
+void m1(){}
+}
+
+
+interface Interface1{
+void method1();
+}
+
+interface Interface2 {
+void method2();}
+
+interface Interface3 {
+void method3();}
+
+class ClassOne implements Interface1, Interface2,Interface3{
+void method1(){}
+void method2(){}
+void method3(){}
+}
+
+
+interface Interface11{
+void method1();
+void method2();
+default void show(){}
+static void print(){}
+}
+
+interface Interface12 extends Interface11
+{
+void method3();
+}
+
+class ABSP implements Interface12
+{
+}
+
+
+abstract class MyClasssss implements Interface11
+{
+void method1(){}
+void show(){}
+}
+
+
+class YourClasssss extends MyClasssss
+{
+void method2(){}
+}
+
+
+YourClasssss yc = new YourClasssss();
+yc.method1();
+yc.method2();
+yc.show();
+Interface11.print();
+
+
+Exception handling
+
+try{
+ // placing the lines of code for exception}
+catch{//code to handle exception}
+finally
+{// set of code which will executed after the catch block}
+throw
+throws// will follow a method
+
+
+void m1() throws ArithmeticException
+{
+}
+
+
+
+if(n1<5)
+ throw exception
+
+Throwable
+ Exception
+ Error
+
+Multitasking
+Multiprocessing
+
+Multithreading
+
+WhatsApp, Insta, YouTube
+
+
+
+Thread
+class ABCD1 extends Thread
+
+Runnable
+class ABCD1 implements Runnable
+
+start
+run
+
+_______________________________________________________
+Day 5 - 04.06.2025
+~~~~~~~~~~~~~~~~~~
+
+
+pack1
+class1
+ protected void m1(){}
+
+class2
+class3
+
+pack2
+class4 extends class1
+
+
+Inner classes
+
+class OuterClass
+{
+ class InnerClass{}
+}
+
+new OuterClass().new InnerClass();
+
+
+class OuterClass
+{
+ static class InnerClass{
+//memebers has to be static
+}
+}
+
+OuterClass.InnerClass.member
+
+
+class OuterClass
+{
+ void m1()
+{
+ class InnerClass{}
+}
+
+}
+
+Anonymous inner class
+
+Wrapper class
+
+auto-boxing - PT to WT
+unboxing - WT to PT
+
+
+int a =5;
+Integer a1 = a;//auto-boxing
+
+Integer a2 = Integer.valueOf(a);//manual code
+
+
+int b = a1;//unboxing
+int b = a1.intValue();//manual code
+
+
+Multithreading
+ Process
+ Thread
+ Multitasking
+ Multiprocessing
+ Multithreading
+
+Thread
+Runnable
+
+start, run
+
+
+Interthread commnuncication
+
+
+Accessspecifiers
+
+public
+protected
+deafult
+
+Inner class
+ - Normal
+ - static
+ - Method
+ - Anonymous
+
+Wrapper class
+ collection
+ Auto boxing and unboxing
+
+COllection - collection
+_______________________________________________________
+
+Lunch till 2 pm
+
+
+
+
+
+
+
+
+Create a class named Employee, with fields Emp_Id (int), Emp_Name (String) and Emp_Address (String), with parametrized constructor and toString() method. Create 6 objects for this class, store them in array and display their values.
+
+Create an abstract class called Shape with abstract method area(). Write 6 classes with any shapes, define the area() method with their formula and display the result accordingly
+
+Create an interface with 2 abstract methods. Have a class to define the abstract methods and invoke them accordingly
+
+
+
+
 
 
 
@@ -628,18 +1034,4 @@ class
 2 pm to 3.30 pm
 3.30 pm to 4 pm
 4 pm to 5.30 pm
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
